@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItemsProvided</title>
+    <script>
+        function redirectToIndex() {
+            window.location.href = "profile.ejs";
+        }
+    </script>
+    <style>
+        body {
+            /* padding: 200px; */
+            /* padding-left: 400px;
+            padding-top: 40px; */
+            margin: 0;
+            padding: 0;
+        }
+
+        #fitems {
+            border-top: 5px solid rgb(187, 32, 161);
+            border-bottom: 5px solid aqua;
+            border-left: 5px solid red;
+            border-right: 5px solid rgb(153, 229, 77);
+            width: 48%;
+            height: 71vh;
+            margin-top: -25px;
+            margin-left: 340px;
+            position: relative;
+            /* position: fixed; */
+            background: linear-gradient(orange, white, green);
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #food {
+            margin-left: 90px;
+            /* position: relative;
+        }
+
+        .center {
+            /* position: relative; */
+            /* left: -210px; */
+
+        }
+
+        #medicine {
+
+            position: absolute;
+            right: 16px;
+            top: 60px;
+        }
+
+        #Dailyuse {
+            margin-left: 90px;
+            margin-top: -12px;
+        }
+
+        h3 {
+            text-decoration: underline;
+        }
+
+        #submit {
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 12px;
+            color: white;
+            position: relative;
+            top: -35px;
+            background-color: #0399fd;
+            border: 4px solid rgb(179, 130, 242);
+            margin-top: -6px;
+
+        }
+
+        #top {
+            background-image: linear-gradient(45deg, rgb(235, 97, 38), rgb(236, 120, 188));
+            padding: 8px;
+            height: 35px;
+            width: 1264px;
+            position: relative;
+            /* position: fixed; */
+            top: -5px;
+
+        }
+
+        #flag {
+            color: aliceblue;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flagimage {
+            padding: 3px;
+            height: 28px;
+            width: 40px;
+            position: absolute;
+            top: 9px;
+        }
+
+        .flagtext {
+            position: absolute;
+            left: 60px;
+            top: -5px;
+        }
+
+        .upper {
+            position: absolute;
+            right: 35px;
+            top: 11px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 180px;
+        }
+
+        .follow {
+            height: 55px;
+            width: 55px;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            /* right: 35px; */
+            top: -12px;
+            right: -1px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 30px;
+            margin-top: 10px;
+            margin-left: 5px;
+
+        }
+
+        #logos {
+            margin-top: 40px;
+            background-color: rgb(239, 126, 194);
+            height: 180px;
+            width: 50px;
+        }
+
+        .langu {
+            height: 55px;
+            width: 55px;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            /* right: 35px; */
+            top: -12px;
+            right: 230px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2px;
+            background-color: green;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 25px;
+        }
+
+        .foot {
+            position: relative;
+            margin-top: 3px;
+        }
+
+        #itembg {
+            height: 100vh;
+            width: 26vw;
+            left: -5px;
+            /* position: fixed; */
+            position: absolute;
+            position: fixed;
+            /* bottom: 8px; */
+            top: -4px;
+
+        }
+
+        #bg2 {
+            height: 100vh;
+            width: 25vw;
+            /* position: absolute; */
+            left: 960px;
+            top: 38px;
+            position: fixed;
+        }
+
+
+        #Mark {
+            color: aqua;
+        }
+
+        #the {
+            color: brown;
+        }
+
+        #reci {
+            color: blue;
+        }
+
+        #ite {
+            color: coral;
+        }
+
+        #from {
+            color: deeppink;
+        }
+
+        #asha {
+            color: lawngreen;
+        }
+
+        #markyou {
+            font-size: 35px;
+            margin-left: 250px;
+            margin-right: 250px;
+            margin-top: 7px;
+        }
+
+        #verify {
+            position: relative;
+            top: -170px;
+            left: 236px;
+            
+        }
+
+        #backpage {
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 12px;
+            color: white;
+            background: linear-gradient(90deg, orange, green);
+            border: 2px solid rgb(230, 213, 252);
+            position: relative;
+            top: -70px;
+            left: -150px;
+            text-decoration: none;
+            padding: 2px;
+        }
+        #click{
+            position: relative;
+            top: -7px;
+            left: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://tinyurl.com/34dedvtz" alt="itembg" id="itembg">
+    <img src="https://tinyurl.com/2v84zk8j" alt="bg2" id="bg2">
+
+    <div id="top">
+        <div id="flag">
+            <span>
+                <img src="https://static.mygov.in/innovateindia/images/flag.jpg" alt="image" class="flagimage">
+            </span>
+            <span>
+                <h4 class="flagtext">GOVERNMENT OF INDIA</h4>
+            </span>
+        </div>
+        <div class="upper">
+            <span><img src="http://tinyurl.com/mr28sky4" alt="image" class="langu"></span>
+            <span class="other">
+                <!-- Add this script at the beginning of your <body> tag -->
+                <div id="google_translate_element" style="position: absolute; top: 1px; right: 80.7px; z-index: 9999;">
+                </div>
+
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'en',
+                            includedLanguages: 'hi,bn,or,ur',
+                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                            autoDisplay: false
+                        }, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript"
+                    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                    </script>
+
+
+                <img src="http://tinyurl.com/bdfrhnpn" onclick="toggleLogos()" alt="follow" class=follow>
+                <div class="right" id="logos" style="display: none;">
+                    <span><a href="https://www.facebook.com/KIITUniversity" target="_blank"><img
+                                src="https://tinyurl.com/2ewyx25z" alt="facebook" class="logo"></a></span>
+                    <span><a href="https://www.instagram.com/KIITUniversity/" target="_blank"><img
+                                src="https://tinyurl.com/5bwus5sv" alt="Instagram" class="logo"
+                                style="border-radius: 30px;"></a></span>
+                    <span><a href="https://twitter.com/KIITUniversity" target="_blank"><img
+                                src="https://tinyurl.com/wxbv2y26" alt="Twitter" class="logo"></a></span>
+                    <span><a href="https://www.youtube.com/channel/UC2x7DxsTyZj7XBa3hlLVPCQ" target="_blank"><img
+                                src="https://tinyurl.com/6prhybpu" alt="Youtube" class="logo"
+                                style="border-radius: 40px;"></a></span>
+                </div>
+                <script>
+                    function toggleLogos() {
+                        var logosDiv = document.getElementById("logos");
+                        if (logosDiv.style.display === "none") {
+                            logosDiv.style.display = "block";
+                        } else {
+                            logosDiv.style.display = "none";
+                        }
+                    }
+                </script>
+
+        </div>
+    </div>
+
+
+
+    <div id="markyou">
+        <marquee behavior="alternate" direction="left" scrollamount="15"><span id="Mark">Mark <span id="the">the <span
+                        id="reci">Recieved <span id="ite">Items <span id="from">From <span
+                                    id="asha">ASHA</span></span></span></span></span></span></marquee>
+
+        <a href="/profile" id="backpage">Back to Profile</a>
+    </div>
+
+
+
+
+
+    <!-- <center> -->
+    <div id="fitems">
+        <form action="#" method="POST">
+            <h1><u>Items Provided by Government</u></h1>
+
+
+            <div class="center">
+
+                <div id="food">
+                    <h3>Food Items: </h3>
+                    <label for="Food">Milk</label><input type="checkbox" name="Food" value="Food"><br>
+                    <label for="Food">1Kg Dates </label><input type="checkbox" name="Food" value="Food"><br>
+                    <label for="Food">Soyabean </label><input type="checkbox" name="Food" value="Food"><br>
+                    <label for="Food">500 gm Protein Biscuit </label><input type="checkbox" name="Food"
+                        value="Food"><br>
+                    <label for="Food">500 gm Ghee </label><input type="checkbox" name="Food" value="Food"><br>
+                    <label for="Food">Pulses</label><input type="checkbox" name="Food" value="Food"><br>
+                    <label for="Food">1Kg Health Mix</label><input type="checkbox" name="Food" value="Food"><br>
+                </div>
+
+                <div id="medicine">
+                    <h3>Medicines:</h3>
+                    <label for="Food">Vitamin tablets </label><input type="checkbox" name="Food" value="Food"><br>
+                    <label for="Food">3 T.Albendazole</label><input type="checkbox" name="Food" value="Food"><br>
+                    <label for="Food">100 Tablets of Iron and Folic Acid </label><input type="checkbox" name="Food"
+                        value="Food"><br>
+                </div>
+            </div><br>
+            <div id="Dailyuse">
+                <h3>Daily Usage Items:</h3>
+                <label for="Food">Clothes</label><input type="checkbox" name="Food" value="Food"><br>
+                <label for="Food">A Plastic Bucket and Mug</label><input type="checkbox" name="Food" value="Food"><br>
+                <label for="Food">Blanket</label><input type="checkbox" name="Food" value="Food"><br>
+
+                <div id="verify">
+                    <pre>"while taking items from asha,
+   click below link to  
+    record a video."</pre>
+                    <a href="http://127.0.0.1:5003/" id="click">Click Here</a>
+                </div>
+            </div>
+
+
+
+            <center>
+                <input type="submit" name="submit" value="Submit" id="submit" onclick="redirectToIndex()">
+            </center>
+
+
+
+
+        </form>
+
+    </div>
+    <footer>
+        <p style="text-align:center" class="foot">&copy; 2024 Pregnancy Support</p>
+    </footer>
+    <!-- </center> -->
+
+</body>
+
+</html>
